@@ -1,6 +1,6 @@
 # Quantum circuit optimization with pruning
 
-There are many pruning methods in the literature for classical neural networks. On the contrary, this field is quite new for quantum neural networks. 
+There are many pruning methods in the literature for classical machine learning models. On the contrary, this field is quite new for quantum machine learning models. 
 
 Here we introduce a simple pruning method to optimize parametrized quantum circuits with the end goal of reducing the number of parameters needed while remaining within chemical accuracy. Importantly, the pruning method introduced could be applied to any Hamiltonian independent of the symmetries of the system. 
 
