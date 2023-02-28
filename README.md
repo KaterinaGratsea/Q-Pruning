@@ -1,9 +1,7 @@
 # Quantum circuit optimization with pruning
 
-In this demo, we present a quantum circuit optimization with pruning which successfully reduces the number of one- and two- qubit parameterized gates of the variational quantum circuit up to a significant degree while remaining within chemical accuracy.
+There are many pruning methods in the literature for classical machine learning models. On the contrary, this field is quite new for quantum machine learning models. 
 
-Interestingly, the given parameter optimization method works independent of the Hamiltonian of the system and its symmetries. 
+Here we introduce a simple pruning method to optimize parametrized quantum circuits with the end goal of reducing the number of parameters needed while remaining within chemical accuracy. Importantly, the pruning method introduced could be applied to any Hamiltonian independent of the symmetries of the system. 
 
-We start by an overparametrized circuit and gradually reduce the parameters by pruning the gates that are close to the Identity operator at each pruning run and use jax to speed-up the otpimization process.
-
- The main goal of this tutorial is to show that the idea of pruning that comes from classical neural networks works also well for quantum variational circuits and leads to parametrized quantum circuits with a significant less number of parameters while remaining within chemical accuracy!
+We apply this optimization technique to the BeH2 molecular Hamiltonian and compare the results with the recent work of <a href="https://www.nature.com/articles/nature23879" title="link"> Kandala et. al. </a>. Interestingly, we can reduce the number of parameters of the circuit by approximately 40% compared to the aforementioned work and still remain within chemical accuracy! 
